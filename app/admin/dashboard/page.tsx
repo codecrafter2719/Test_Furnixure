@@ -29,7 +29,7 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        <div className="border-b pb-4">
+        <div className="border-b pb-4 mb-4">
           <h2 className="text-lg font-semibold mb-3">Categories</h2>
           <div className="grid gap-3">
             <button
@@ -44,6 +44,44 @@ export default function AdminDashboard() {
               className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded"
             >
               View Categories
+            </button>
+          </div>
+        </div>
+
+        <div className="border-b pb-4 mb-4">
+          <h2 className="text-lg font-semibold mb-3">Products</h2>
+          <div className="grid gap-3">
+            <button
+              onClick={() => router.push('/admin/products/add')}
+              className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded"
+            >
+              Add Product
+            </button>
+
+            <button
+              onClick={() => router.push('/admin/products')}
+              className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded"
+            >
+              View Products
+            </button>
+          </div>
+        </div>
+
+        <div className="border-b pb-4">
+          <h2 className="text-lg font-semibold mb-3">Carousel</h2>
+          <div className="grid gap-3">
+            <button
+              onClick={() => router.push('/admin/carousel')}
+              className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-2 px-4 rounded"
+            >
+              Add Carousel
+            </button>
+
+            <button
+              onClick={() => router.push('/admin/view-carousel')}
+              className="bg-rose-500 hover:bg-rose-600 text-white font-medium py-2 px-4 rounded"
+            >
+              View Carousel
             </button>
           </div>
         </div>
